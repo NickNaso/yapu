@@ -1,0 +1,49 @@
+{
+  "name": "yapu",
+  "description": "Yet Another PNG Utility",
+  "version": "1.0.0",
+  "author": "Nicola Del Gobbo <nicoladelgobbo@gmail.com>",
+  "homepage": "http://www.nacios.it/",
+  "contributors": [
+    {
+      "name": "Nicola Del Gobbo",
+      "email": "nicoladelgobbo@gmail.com"
+    },
+    {
+      "name": "Mauro Doganieri",
+      "email": "mauro.doganieri@gmail.com"
+    }
+  ],
+  "keywords": [
+      "png",
+      "decode",
+      "encode",
+      "bmp",
+      "gzip",
+      "image"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=test/jasmine.json",
+    "install": "node-gyp rebuild"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickNaso/yapu.git"
+  },
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/NickNaso/yapu/issues"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  },
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^2.6.2"
+  }
+}
