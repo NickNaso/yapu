@@ -15,17 +15,17 @@
     }
   ],
   "keywords": [
-      "png",
-      "decode",
-      "encode",
-      "bmp",
-      "gzip",
-      "image"
+    "png",
+    "decode",
+    "encode",
+    "bmp",
+    "gzip",
+    "image"
   ],
   "license": "Apache-2.0",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=test/jasmine.json",
+    "test": "node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=__test__/jasmine.json",
     "install": "node-gyp rebuild"
   },
   "engines": {
