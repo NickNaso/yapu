@@ -16,3 +16,14 @@
 * Nicola Del Gobbo <nicoladelgobbo@gmail.com>
 * Mauro Doganieri <mauro.doganieri@gmail.com>
 ******************************************************************************/
+
+const yapu = require('../')
+
+describe('Test yapu', function () {
+    
+        it('Should return the version of yapu', function () {
+            expect(yapu.version()).not.toBe(null)
+            expect(yapu.version()).toBe("20161127");
+        })
+        
+    })

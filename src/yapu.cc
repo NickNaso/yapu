@@ -17,4 +17,22 @@
  * Mauro Doganieri <mauro.doganieri@gmail.com>
  ******************************************************************************/
 
- 
+ #include "yapu.h"
+
+ NAN_METHOD(Version)
+{
+    Nan::HandleScope();
+    info.GetReturnValue().Set(Nan::New<String>(LODEPNG_VERSION_STRING).ToLocalChecked());
+}
+
+ //////////////////////////// INIT & CONFIG MODULE //////////////////////////////
+
+NAN_MODULE_INIT(Init)
+{
+    Nan::Set(target, Nan::New("version").ToLocalChecked(),
+                 Nan::New<FunctionTemplate>(Version)->GetFunction());
+}
+
+ NODE_MODULE(yapu, Init)
+
+////////////////////////////////////////////////////////////////////////////////

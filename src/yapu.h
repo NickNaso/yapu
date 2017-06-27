@@ -16,3 +16,23 @@
  * Nicola Del Gobbo <nicoladelgobbo@gmail.com>
  * Mauro Doganieri <mauro.doganieri@gmail.com>
  ******************************************************************************/
+
+#ifndef YAPU_H
+#define YAPU_H
+
+#include <sstream>
+#include <string>
+
+#include <node.h>                       
+#include <v8.h>
+#include <nan.h>
+
+using namespace Nan;
+using namespace v8;
+using namespace std;
+
+// LodePNG 
+#include "LodePNG/lodepng.h"
+#include "LodePNG/lodepng_util.h"
+
+#endif //YAPU_H
